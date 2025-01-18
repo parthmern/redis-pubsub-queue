@@ -28,5 +28,5 @@
 - why do you need pub-sub? why cannot worker tell the websocket layer or http ?
 
 
-// skip for today
-// looks needed time like whole day 
+### caching
+- distributed caching by redis ( in memory storage means in ram)
