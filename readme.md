@@ -30,3 +30,5 @@
 
 ### caching
 - distributed caching by redis ( in memory storage means in ram)
+- ![image](https://github.com/user-attachments/assets/153de5cb-9bcb-4a2a-9485-44eddbc60afa)
+
