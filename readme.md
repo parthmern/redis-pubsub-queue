@@ -30,5 +30,31 @@
 
 ### caching
 - distributed caching by redis ( in memory storage means in ram)
+<br/>
+
+- why distributed caching ? ( nodejs server also save in global state or in hashmap)
 - ![image](https://github.com/user-attachments/assets/153de5cb-9bcb-4a2a-9485-44eddbc60afa)
+
+### redis is in memory db what if the redis server dies ?
+- https://projects.100xdevs.com/tracks/Redis/Redis2
+- AOF (Append Only File), snapshots 
+
+### if caching working for 10 mins then what if after 2 min some db data changed?
+- do that when admin do CREATE req on db that time make redis caching empty
+- that's how u can get a new redis caches after new CREATE req by admin
+
+- so first CLEAR DATA IN REDIS  then scondly PUT data in postgres
+ 
+### SET/GET/DEL
+
+- https://projects.100xdevs.com/tracks/Redis/Redis4
+
+### Redis as a queue
+
+- https://projects.100xdevs.com/tracks/Redis/Redis5
+- L means from left side
+- for queue : left push and right pop (LPUSH then RPOP)
+
+- `BRPOP problems 0` here 0 means infinite it block queue until something push to the queue
+- `BRPOP problems 30` here 30 means it block queue for 30sec
 
