@@ -58,3 +58,6 @@
 - `BRPOP problems 0` here 0 means infinite it block queue until something push to the queue
 - `BRPOP problems 30` here 30 means it block queue for 30sec
 
+
+
+// pub sub is pending
